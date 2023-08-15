@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="nav_bar.css">
+	<style>
+		.ccinfo{
+			width: 60vw;
+			min-height: 10vw;
+			border: 1px solid black;
+			position: absolute;
+			top: -100%;
+			background-color: white;
+			padding: 1vw 1.5vw;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 10;
+		}
+		.cont{
+			margin-top: 1vw;
+			width: 6vw;
+			background-color: black;
+			color: white;
+			padding: 0.3vw 0.6vw;
+			margin-left: 0.1vw;
+			text-align: center;
+			cursor: pointer;
+			z-index: 10;
+		}
+		.hide_click{
+			z-index: 1;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="content_wrapper.css">
+	<link rel="stylesheet" type="text/css" href="info.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+</head>
+<body>
+	<div class="ccinfo ">
+		<h3>Respected Sir/Mam this is to kindly inform you that this page has not been made responsive for mobile devices so if you open it on mobile phones it might be not user interactive the reason is due to time limitations and some extra activities going on in my university which made me to work on it for laptops and big screens only.I am sorry for inconveniences but if possible I will make it responsive in future.<br>
+			<br>
+			Also the data provided in the hospital Section is random, its not using any backend for data verification ,here I have used javascript as pseudo backend which will do the verification part and on verification will generate a button to download your documents for signing by patient and you may use that document to pass to the concerned TPA and proceed further.<br><br>
+			Coming to the mail ,currently I have used PHP to send mail to the mail which will be provided in TPA's mail section and it will be sent by my some random mail .So please insure that you provide mail where you can verify the page wether it's working and not.In case of any problem please inform me.Thank You
+		</h3>
+	  <div onClick="hide()" class="cont">Continue</div>
+	</div>
+	<div class="back_page hide_click">
+		<div class="nav_bar">
+			<div class="logo ex_logo">CURECL<span class="ai">AI</span>MS</div>
+			<div class="nav_tabs">
+				<div><a href="index.html">Home </a></div>
+				<div><a href="hopital_details.html">Hospital Details</a></div>
+				<div><a href="TPAmail.php">Send mail</a></div>
+			</div>
+			<div class="sign_up"><a href="sign.html">Sign up</a></div>
+		</div>
+		<div class="content_wrapper">
+			<div class="details_section">
+				<div class="moto">
+					<h2>Let <span>AI</span> do insure you for your health</h2>
+				</div>
+				<div class="moto1">Did you ever believe that now your health can easily be monitored by <span>AI</span> you may not.But now here we come with one of the most innovative idea for your health insurance.</div>
+				<div class="getstarted">
+					<a href="hopital_details.html">Get Started</a>
+				</div>
+			</div>
+			<div class="image_section">
+				   <div class="image_part"><img src="aimage.jpg" class="imgs"></div>
+                
+			</div>
+		</div>
+	</div>
+<script>
+	var to_show=document.querySelector('.ccinfo');
+	var contents=document.querySelector('.hide_click');
+    function loader(){
+		contents.style.filter='brightness(20%)';
+		to_show.style.top='30%';
+	}
+	loader();
+	function hide(){
+		
+		to_show.style.transition='0.6s';
+		contents.style.filter='brightness(100%)';
+		to_show.style.top="-300%";
+	}
+</script>
+</body>
+</html>

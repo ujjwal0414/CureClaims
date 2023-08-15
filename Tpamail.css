@@ -1,0 +1,91 @@
+.form_container{
+    width: 40vw;
+    min-height: 20vh;
+   
+    
+    margin-left: 50%;
+    transform: translateX(-50%);
+   
+}
+.doctors_note{
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    width: 30vw;
+    height: 5vw;
+
+}
+.mails{
+    display: flex;
+   
+    margin-top: 0.2vw;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 30vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+}
+.input_mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+   
+    margin-top: 1.5vw;
+
+}
+input:focus{
+    outline: none;
+
+border-bottom: 1px solid black;
+}
+.inputs_details:focus .mails{
+    display: block;
+
+}
+.inputs_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:30vw ;
+    outline: none;
+    border: none;
+    border-bottom: 1.3px solid black;
+}
+.file_container{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    margin-top: 0.8vw;
+}
+.email_input{
+    display: flex;
+   
+    justify-content: center;
+}
+.files{
+    width: 30vw;
+    justify-content: center;
+    
+}
+
+.btn_container{
+    margin-top: 0.8vw;
+    display: flex;
+    width: 40vw;
+    gap: 2vw;
+}
+.flexer{
+    display: flex;
+    width: 17.6vw;
+    justify-content: center;
+}
+.choose{
+    background-color: black;
+    padding: 0.3vw 0.7vw;
+}
+.submx{
+    margin-left: 2vw;
+}

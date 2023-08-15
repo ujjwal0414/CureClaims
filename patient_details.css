@@ -1,0 +1,193 @@
+.patient_inputs{
+	width: 44vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	min-height: 54vh;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(3px);
+	border: 1px solid black;
+	position: absolute;
+	top: -180%;
+	padding-top: 1vw;
+	padding-left: 10px;
+	padding-right: 10px;
+    padding-bottom: 1vw;
+    box-shadow: 0px 0px 4px 1px black;
+	
+}
+.patient_inputs>::placeholder{
+	color: black;
+	font-weight: 600;
+}
+
+input,select,textarea{
+	background: transparent;
+}
+.name_gender{
+	display: flex;
+	width: 40vw;
+	justify-content: center;
+}
+.patient_name{
+	width: 28vw;
+}
+::placeholder
+{
+	color: black;
+	font-weight: 500;
+}
+.patient_name>input{
+	padding: 0.5vw 0.6vw;
+
+	width: 26vw;
+}
+.gender{
+	width: 10vw;
+}
+select{
+	  appearance: none; /* Remove default styles */
+  padding: 0.5vw 0.6vw;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color:transparent;
+  width: 200px;
+  cursor: pointer;
+}
+select:focus{
+	  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+
+}
+ option{
+	  padding: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+.gender>select{
+	width: 10vw;
+}
+.pateint_id_illnes{
+	margin-top: 0.8vw;
+	display: flex;
+	width: 40vw;
+	justify-content: center;
+}
+.illnes{
+	display: flex;
+	justify-content: center;
+	width: 28vw;
+}
+.patient_id{
+	
+
+	width:10vw ;
+}
+
+.room_date{
+	margin-top: 0.8vw;
+	display: flex;
+	width: 44vw;
+	justify-content: space-around;
+}
+.room >input{
+	padding: 0.5vw 0.3vw;
+
+}
+.date>input{
+	padding: 0.5vw 0.3vw;
+
+}
+.charges{
+	margin-top: 0.8vw;
+	display: flex;
+	justify-content: center;
+}
+.buttons_patient{
+	margin-top: 0.8vw;
+	display: flex;
+	width: 40vw;
+	justify-content: center;
+	margin-left: 50%;
+	transform: translateX(-50%);
+
+}
+.btn_container_patient{
+	display: flex;
+	justify-content: center;
+	width: 21vw;
+
+}
+.patient_btns{
+	background-color: black;
+	color: white;
+	padding: 0.3vw 2vw;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+.submit{
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+.get{
+	display: none;
+}
+.docs{
+
+	width: 44vw;
+	margin-top: 0.8vw;
+	margin-left: 7vw;
+	
+
+}
+.get_docs{
+	width: 30vw;
+	padding: 0.2vw 13vw;
+}
+.processing{
+	margin-top: 1vw;
+	width: 39.5vw;
+	display: flex;
+    height: 2vw;
+    border: 0.4px solid black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.procee{
+	display: none;
+	position: relative;
+}
+.processing_logo{
+	width: 2vw;
+	height: 2vw;
+	padding-left: 0.7vw;
+}
+.current_status{
+	width: 34.8vw;
+	padding-left: 2vw;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	color: rgb(73, 51, 102);
+	font-size: 1.2rem;
+	font-weight: 600s;
+	top: 0.2vw;
+
+}
+.loader{
+	width: 1.8vw;
+	height: 1.8vw;
+	animation: rotater 4s linear infinite;
+}
+@keyframes rotater{
+	0%{
+		transform: rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(360deg);
+	
+	}
+}
+

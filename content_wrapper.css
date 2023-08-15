@@ -1,0 +1,32 @@
+.content_wrapper{
+	display: flex;
+
+}
+.details_section{
+	min-height: 88vh;
+	width: 50vw;
+	
+}
+.image_section{
+	min-height: 88vh;
+	width: 50vw;
+	
+	justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+.image_part{
+	width: 36vw;
+	height: 32vw;
+}
+.imgs{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px 1px black;
+}

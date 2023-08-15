@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		.ccinfo{
+			width: 30vw;
+			min-height: 10vw;
+			border: 1px solid black;
+			position: absolute;
+			top: -100%;
+			background-color: white;
+			padding: 1vw 1.5vw;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 10;
+		}
+		.cont{
+			margin-top: 1vw;
+			width: 6vw;
+			background-color: black;
+			color: white;
+			padding: 0.3vw 0.6vw;
+			margin-left: 0.1vw;
+			text-align: center;
+			cursor: pointer;
+			z-index: 10;
+		}
+		.hide_click{
+			z-index: 1;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="nav_bar.css">
+	<link rel="stylesheet" type="text/css" href="hospital_details.css">
+	<link rel="stylesheet" type="text/css" href="hospital_details_back_page.css">
+	<link rel="stylesheet" type="text/css" href="patient_details.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hopital Data</title>
+</head>
+<body>
+	<div class="ccinfo ">
+		<h3>Respected Sir/Mam this is to kindly inform you that the data verification is random it's not using some actual data like Hospital's name ,address,branch to generate pdf.This page is just for gerating documents which will be shown as proof to TPA's official,The actual verification was part of backend.Thank you </h3>
+	  <div onClick="hide()" class="cont">Continue</div>
+	</div>
+	<div class="back_page_detailer hide_click">
+		<div class="nav_bar">
+			<div class="logo">CURECL<span class="ai">AI</span>MS</div>
+			<div class="nav_tabs">
+				<div><a href="index.html" class="locators">Home </a></div>
+				<div><a href="hopital_details.html" class="locators">Hospital Details</a></div>
+				<div><a href="TPAmail.php" class="locators">Send mail</a></div>
+			</div>
+			<div class="sign_up"><a href="sign.html">Sign up</a></div>
+		</div>
+		<div class="content_wrapper">
+			
+		</div>
+		<div class="hospital_patient_container">
+			<div class="hospital_inputs">
+
+				<div class="input_with_label">
+					<div class="label">Hospital Name  </div>
+					<div class="input_field">
+						<input type="text" name="hospital_name" placeholder="Enter Hospital Name" class="hospital_name">
+					</div>
+				</div>
+				<div class="check_show hname">Hospital Name Verified</div>
+				<div class="check_notshow hnotshow">Hospital Name Not Verified</div>
+
+				<div class="input_with_label label2">
+					<div class="label">Branch Name  &nbsp</div>
+					<div class="input_field">
+						<input type="text" name="Branch_name" placeholder="Enter Branch Name" class="Branch_name">
+					</div>
+				</div>
+				<div class="check_show bname">Branch Name Verified</div>
+				<div class="check_notshow bname_notshow">Branch Name Not Verified</div>
+
+				<div class="input_with_label label3">
+					<div class="label">Address  &nbsp</div>
+					<div class="input_field">
+						<input type="text" name="address" placeholder="Address " class="address">
+					</div>
+				</div>
+				<div class="check_show add">Address Verified</div>
+				<div class="check_notshow add_notshow">Address Not Verified</div>
+				<div class="verify_container"><button class="verify">Verify</button></div>
+			</div>
+
+			<div class="patient_inputs">
+				<div class="name_gender">
+					<div class="patient_name">
+						<input type="text" name="patient_name" class="input_patient" placeholder="Enter Patient Name">
+					</div>
+					<div class="gender">
+						<select>
+							<option >Gender</option>
+							<option>Male</option>
+							<option>Female</option>
+							<option>Rather Not Say</option>
+						</select>
+					</div>
+				</div>
+				<div class="pateint_id_illnes">
+					<div class="illnes"><textarea rows="5" cols="53.3vw" placeholder="Enter Patient's illness and the diagnosis and findings" class="ill_info"></textarea></div>
+					<div class="patient_id"><input type="text" placeholder="Enter Patient IDs" class="ids"></div>
+				</div>
+				<div class="room_date">
+					<div class="room"><input type="text" placeholder="Enter Room Type"></div>
+					<div class="date"><input type="text" placeholder="23/02/1999" class="date_admit"></div>
+					<div><input type="radio" name="typeof">Package
+						<input type="radio" name="typeof">Non Package</div>
+				</div>
+				<div class="charges"><textarea rows="5" cols="80" placeholder="Provide All expenses in the format :- xyz (The_concerned_charges) in a new line" class="expenses"></textarea></div>
+				<div class="charges"><textarea rows="5" cols="80" placeholder="Provide Doctors Note" class="note"></textarea></div>
+				<div class="processing procee">
+					<div class="processing_logo"><img src="loading.png" class="loader"></div>
+					<div class="current_status">Processing Data</div>
+				</div>
+				<div class="buttons_patient">
+					<div class="btn_container_patient">
+					<button class="patient_btns submit">Submit</button>
+				    </div>
+				    <div class="btn_container_patient">
+				    	<button class="patient_btns reverifybtn">Verify Hospital Details</button>
+				    </div>
+			    </div>
+			    <div class="docs get"><button class="patient_btns get_docs">Get Documents</button></div>
+			</div>
+		</div>
+	</div>
+   <script type="text/javascript" src="verifier.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!-- <script>
+	
+	var to_show=document.querySelector('.ccinfo');
+	var contents=document.querySelector('.hide_click');
+    function loader(){
+		contents.style.filter='brightness(20%)';
+		to_show.style.top='30%';
+	}
+	loader();
+	function hide(){
+		
+		to_show.style.transition='0.6s';
+		contents.style.filter='brightness(100%)';
+		to_show.style.top="-100%";
+	}
+</script> -->
+</body>
+</html>

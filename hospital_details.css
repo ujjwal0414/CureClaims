@@ -1,0 +1,124 @@
+.hospital_patient_container{
+	position: relative;
+	min-height: 82vh;
+}
+.hospital_inputs{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 44vw;
+	padding-top: 0.7vw;
+	padding: 10px 2px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1.4vw;
+	box-shadow: 0px 0px 4px 1px black;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(5px);
+	margin-top: 7vw;
+}
+.input_with_label{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 1.4vw;
+	}
+.label{
+	min-width: 35vw;
+	font-size: 1.2rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: flex-start;
+}
+.input_field{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 35vw;
+	margin-right: 0px;
+}
+.check_show{
+	
+	margin-top: 0.2vw;
+	margin-left: 50%;
+	font-size: 1.3rem;
+	font-weight: 700;
+	font-family: 'Poppins' sans-serif;
+	transform: translateX(-50%);
+	width: 22vw;
+	background-color: rgba(180, 224, 173, 1.0);
+	color: rgb(15, 168, 53);
+	padding: 0.6vw 1vw;
+	border: 2px solid rgb(15, 168, 53);
+	border-radius: 1vw;
+}
+.check_notshow{
+	
+	margin-top: 0.2vw;
+	margin-left: 50%;
+	font-size: 1.3rem;
+	font-weight: 700;
+	font-family: 'Poppins' sans-serif;
+	transform: translateX(-50%);
+	width: 22vw;
+	background-color: rgba(227, 157, 173, 1.0);
+	color: rgb(194, 0, 44);
+	padding: 0.6vw 1vw;
+	border: 2px solid rgb(194, 0, 44);
+	border-radius: 1vw;
+
+}
+.hname{
+	display: none;
+}
+.hnotshow{
+	display: none;
+}
+.bname{
+	display: none;
+}
+.bname_notshow{
+	display: none;
+}
+.add{
+	display: none;
+}
+.add_notshow{
+	display: none;
+}
+
+.hospital_inputs input{
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 1.2rem;
+	margin-right: 0px;
+	padding-bottom: 0.2vw;
+	padding-left: 0.3vw;
+	padding-top: 0.5vw;
+	width: 35vw;
+	border: 0;
+	border-bottom: 1px solid black;
+	background-color: transparent;
+}
+input:focus{
+	outline: none;
+
+border-bottom: 1px solid black;
+	
+}
+.verify_container{
+	display: flex;
+	justify-content: center;
+	margin-left: 60%;
+	transform: translateX(-50%);
+	margin-top: 1vw;
+	width: 28vw;
+}
+.verify{
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	padding: 0.6vw 8vw;
+	background-color: black;
+	color: white;
+}

@@ -1,0 +1,19 @@
+.back_page_detailer{
+	background-image: url('bg1.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.locators{
+	transition: 0.3s;
+}
+.locators:hover{
+    color: rgb(47, 103, 117);
+}
+.nav_tabs div:hover a{
+	left: 0px;
+	color: rgb(0, 179, 164);
+	
+	
+}

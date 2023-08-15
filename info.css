@@ -1,0 +1,36 @@
+.moto{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-weight: 900;
+	line-height-step: 1px;
+	font-size: 2.5rem;
+	margin-left: 5vw;
+	margin-top: 15%;
+	
+
+}
+.moto1{
+	width: 85%;
+	
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-left: 5vw;
+	margin-top: 5%;
+
+}
+.getstarted{
+margin-top: 3vw;
+	padding: 0.3vw 0.8wv;
+}
+.getstarted> a{
+	margin-left: 5vw;
+	padding: 1vw 2vw;
+	border-radius: 26px;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+
+}
+
